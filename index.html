@@ -328,19 +328,19 @@
 <p>En este método, el cual es numérico, se usa un concepto parecido al de Newton-Raphson, en el que se podían aproximar los ceros de una función mediante un <span class="arithmatex">\( x \)</span> inicial y la división entre la función de interés y su respectiva derivada evaluada en el mismo punto. Luego, el punto dado se volvía a evaluar, realizando las iteraciones deseadas hasta minimizar el error.</p>
 <p>Sin embargo, en este método hay una diferencia, y es que en cada iteración se calcula un número, generando un conjunto de números que corresponden a una coordenada, llamada 'y'. Esto se hace mediante el <span class="arithmatex">\( x \)</span> inicial, el <span class="arithmatex">\( x \)</span> final, cierta cantidad de iteraciones y un paso dado por <span class="arithmatex">\( h \)</span>, que es la diferencia entre <span class="arithmatex">\( x \)</span> final e <span class="arithmatex">\( x \)</span> inicial dividida por la cantidad de iteraciones (Se habla de iteraciones desde la perspectiva de la programación).</p>
 <p>Todo lo anterior se resume en la siguiente fórmula:
-[ y(i) = y(i-1) + hf(x_0 + ih, y(i-1)) ]</p>
+<span class="arithmatex">\( y(i) = y(i-1) + hf(x_0 + ih, y(i-1)) \)</span></p>
 <h2 id="metodo-de-rk2-runge-kutta-de-segundo-orden">Método de RK2 (Runge-Kutta de segundo orden)</h2>
 <p>El método RK2 es otra herramienta numérica para resolver ecuaciones diferenciales ordinarias (ODEs), y es una generalización del método de Euler. Este calcula un <span class="arithmatex">\( k_1 \)</span>, que es una parte de una pendiente, en el punto inicial <span class="arithmatex">\( f(x_0 + i*h, y_i) \)</span>, lo cual aproxima la pendiente en un punto. Luego de esto se calcula un <span class="arithmatex">\( k_2 \)</span>, que consiste en sumar <span class="arithmatex">\( h \)</span> a la <span class="arithmatex">\( x \)</span> y a la <span class="arithmatex">\( y \)</span> de la función, para dar un ajuste a la pendiente. Luego estos dos se suman, se multiplican por <span class="arithmatex">\( h/2 \)</span> y se le suma al <span class="arithmatex">\( y_n \)</span> de la iteración actual. Todo esto se resume en lo siguiente:</p>
-<p>[ k_1 = h f(x_0 + (i-1)h, y(i-1)) ]
-[ k_2 = h f(x_0 + ih, y(i-1) + k_1) ]
-[ y(i) = y(i-1) + \frac{k_1 + k_2}{2} ]</p>
+<p><span class="arithmatex">\( k_1 = h f(x_0 + (i-1)h, y(i-1)) \)</span>
+<span class="arithmatex">\( k_2 = h f(x_0 + ih, y(i-1) + k_1) \)</span>
+<span class="arithmatex">\( y(i) = y(i-1) + \frac{k_1 + k_2}{2} \)</span></p>
 <h2 id="metodo-de-rk4-runge-kutta-de-cuarto-orden">Método de RK4 (Runge-Kutta de cuarto orden)</h2>
 <p>Este método usa una idea similar al método RK2, definiendo 4 diferentes <span class="arithmatex">\( k \)</span> de la siguiente manera, además de la ecuación a seguir en el código para poder realizar el cálculo de todos los puntos:</p>
-<p>[ k_1 = h f(x_0 + i*h, y_n) ]
-[ k_2 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_1}{2} \right) ]
-[ k_3 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_2}{2} \right) ]
-[ k_4 = h f \left(x_0 + ih, y(i-1) + k_3 \right) ]
-[ y(i) = y(i-1) + \frac{h}{6} (k_1 + 2k_2 + 2k_3 + k_4) ]</p>
+<p><span class="arithmatex">\( k_1 = h f(x_0 + i*h, y_n) \)</span>
+<span class="arithmatex">\( k_2 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_1}{2} \right) \)</span>
+<span class="arithmatex">\( k_3 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_2}{2} \right) \)</span>
+<span class="arithmatex">\( k_4 = h f \left(x_0 + ih, y(i-1) + k_3 \right) \)</span>
+<span class="arithmatex">\( y(i) = y(i-1) + \frac{h}{6} (k_1 + 2k_2 + 2k_3 + k_4) \)</span></p>
 
 
 
@@ -394,9 +394,9 @@
       
         <script src="javascript/mathjax.js"></script>
       
-        <script src="https://plyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/text-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

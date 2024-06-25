@@ -1,0 +1,403 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="reference/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>ODE</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduccion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="ODE" class="md-header__button md-logo" aria-label="ODE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ODE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ODE
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="ODE" class="md-nav__button md-logo" aria-label="ODE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ODE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ODE
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    ODE
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-euler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de Euler
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-rk2-runge-kutta-de-segundo-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de RK2 (Runge-Kutta de segundo orden)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-rk4-runge-kutta-de-cuarto-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de RK4 (Runge-Kutta de cuarto orden)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-euler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de Euler
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-rk2-runge-kutta-de-segundo-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de RK2 (Runge-Kutta de segundo orden)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-rk4-runge-kutta-de-cuarto-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método de RK4 (Runge-Kutta de cuarto orden)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="introduccion">Introducción</h1>
+<p>Se van a describir los métodos de Euler, RK2 (Runge-Kutta de segundo orden) y RK4 (Runge-Kutta de cuarto orden), y se comenzará a describir en el orden mencionado.</p>
+<h2 id="metodo-de-euler">Método de Euler</h2>
+<p>En este método, el cual es numérico, se usa un concepto parecido al de Newton-Raphson, en el que se podían aproximar los ceros de una función mediante un <span class="arithmatex">\( x \)</span> inicial y la división entre la función de interés y su respectiva derivada evaluada en el mismo punto. Luego, el punto dado se volvía a evaluar, realizando las iteraciones deseadas hasta minimizar el error.</p>
+<p>Sin embargo, en este método hay una diferencia, y es que en cada iteración se calcula un número, generando un conjunto de números que corresponden a una coordenada, llamada 'y'. Esto se hace mediante el <span class="arithmatex">\( x \)</span> inicial, el <span class="arithmatex">\( x \)</span> final, cierta cantidad de iteraciones y un paso dado por <span class="arithmatex">\( h \)</span>, que es la diferencia entre <span class="arithmatex">\( x \)</span> final e <span class="arithmatex">\( x \)</span> inicial dividida por la cantidad de iteraciones (Se habla de iteraciones desde la perspectiva de la programación).</p>
+<p>Todo lo anterior se resume en la siguiente fórmula:
+[ y(i) = y(i-1) + hf(x_0 + ih, y(i-1)) ]</p>
+<h2 id="metodo-de-rk2-runge-kutta-de-segundo-orden">Método de RK2 (Runge-Kutta de segundo orden)</h2>
+<p>El método RK2 es otra herramienta numérica para resolver ecuaciones diferenciales ordinarias (ODEs), y es una generalización del método de Euler. Este calcula un <span class="arithmatex">\( k_1 \)</span>, que es una parte de una pendiente, en el punto inicial <span class="arithmatex">\( f(x_0 + i*h, y_i) \)</span>, lo cual aproxima la pendiente en un punto. Luego de esto se calcula un <span class="arithmatex">\( k_2 \)</span>, que consiste en sumar <span class="arithmatex">\( h \)</span> a la <span class="arithmatex">\( x \)</span> y a la <span class="arithmatex">\( y \)</span> de la función, para dar un ajuste a la pendiente. Luego estos dos se suman, se multiplican por <span class="arithmatex">\( h/2 \)</span> y se le suma al <span class="arithmatex">\( y_n \)</span> de la iteración actual. Todo esto se resume en lo siguiente:</p>
+<p>[ k_1 = h f(x_0 + (i-1)h, y(i-1)) ]
+[ k_2 = h f(x_0 + ih, y(i-1) + k_1) ]
+[ y(i) = y(i-1) + \frac{k_1 + k_2}{2} ]</p>
+<h2 id="metodo-de-rk4-runge-kutta-de-cuarto-orden">Método de RK4 (Runge-Kutta de cuarto orden)</h2>
+<p>Este método usa una idea similar al método RK2, definiendo 4 diferentes <span class="arithmatex">\( k \)</span> de la siguiente manera, además de la ecuación a seguir en el código para poder realizar el cálculo de todos los puntos:</p>
+<p>[ k_1 = h f(x_0 + i*h, y_n) ]
+[ k_2 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_1}{2} \right) ]
+[ k_3 = h f \left(x_0 + (i - \frac{1}{2})h, y(i-1) + \frac{k_2}{2} \right) ]
+[ k_4 = h f \left(x_0 + ih, y(i-1) + k_3 \right) ]
+[ y(i) = y(i-1) + \frac{h}{6} (k_1 + 2k_2 + 2k_3 + k_4) ]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="javascript/mathjax.js"></script>
+      
+        <script src="https://plyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/text-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

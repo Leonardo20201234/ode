@@ -1,4 +1,4 @@
-site_name: ode
+site_name: ODE
 
 theme:
   name: "material"
@@ -9,8 +9,8 @@ markdown_extensions:
 
 extra_javascript:
   - javascript/mathjax.js
-  - https://plyfill.io/v3/polyfill.min.js?features=es6
-  - https://unpkg.com/mathjax@3/es5/text-mml-chtml.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - mkdocstrings
@@ -18,4 +18,3 @@ plugins:
 nav:
   - ODE: index.md
   - reference.md
-

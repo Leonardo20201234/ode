@@ -23,7 +23,7 @@ def fprima(x,y):
 def euler(x0, xf, f, ite):
     """Método numérico para calcular una función
 
-    Example: 
+    Example:
         >>> euler(0,2, fprima,40)
         resultado
 
@@ -47,7 +47,7 @@ def euler(x0, xf, f, ite):
 def rk2(x0, xf, f, ite):
     """Método numérico para calcular una función
 
-    Example: 
+    Example:
          >>> rk2(0,2, fprima,40)
         resultado1
 
@@ -57,7 +57,7 @@ def rk2(x0, xf, f, ite):
         fprima (func) : Es lo que dicta como es la derivada
         ite (integer) : La cantidad de iteraciones del for
 
-    Returns: 
+    Returns:
         array: Retorna una arreglo con todos los puntos yn calculado en resultado1
     """
     h = (xf-x0)/ite
@@ -72,7 +72,7 @@ def rk2(x0, xf, f, ite):
 def rk4(x0,xf, f, ite):
     """Método numérico para calcular una función
 
-    Example: 
+    Example:
         >>> rk4(0,2, fprima,40)
         resultado2
 
@@ -82,9 +82,9 @@ def rk4(x0,xf, f, ite):
     fprima (func) : Es lo que dicta como es la derivada
     ite (integer) : La cantidad de iteraciones del for
 
-    Returns: 
+    Returns:
         array: Retorna una arreglo con todos los puntos yn calculados en resultado2
-    """    
+    """
     h = (xf-x0)/ite
     resultado2 = np.zeros(ite)
     resultado2[0] = x0

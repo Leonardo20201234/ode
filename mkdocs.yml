@@ -3,9 +3,6 @@ site_name: ODE
 theme:
   name: "material"
 
-plugins:
-  - mkdocstrings
-
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -15,7 +12,10 @@ extra_javascript:
   - https://plyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/text-mml-chtml.js
 
+plugins:
+  - mkdocstrings
+
 nav:
-  - index.md
+  - ODE: index.md
   - reference.md
 
